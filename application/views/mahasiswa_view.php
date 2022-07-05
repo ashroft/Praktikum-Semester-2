@@ -5,7 +5,7 @@
     <table class="table">
         <thead>
             <tr>
-                <th>#</th>
+                <th>NO</th>
                 <th>NIM</th>
                 <th>Nama</th>
                 <th>Gender</th>

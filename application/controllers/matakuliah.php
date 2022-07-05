@@ -9,7 +9,7 @@ class Matakuliah extends CI_Controller {
         $this->mk1->kode = '1131';
         $this->mk1->nama = 'Pemrograman Website';
         $this->mk1->semester = '3';
-        $this->mk1->matkul = 'Pemrograman Web';
+        $this->mk1->matkul = 'PEMWEB';
         $this->mk1->sks = '3';
         $this->mk1->dosen = 'Ashrof';
         $this->mk1->hari = 'Rabu';
@@ -20,7 +20,7 @@ class Matakuliah extends CI_Controller {
         $this->mk2->kode = '1231';
         $this->mk2->nama = 'Matematika Komputer';
         $this->mk2->semester = '4';
-        $this->mk2->matkul = 'Matematika Komputer';
+        $this->mk2->matkul = 'MATKOM';
         $this->mk2->sks = '3';
         $this->mk2->dosen = 'Dewi';
         $this->mk2->hari = 'Selasa';
@@ -31,7 +31,7 @@ class Matakuliah extends CI_Controller {
         $this->mk3->kode = '1331';
         $this->mk3->nama = 'Basis Data';
         $this->mk3->semester = '5';
-        $this->mk3->matkul = 'Basis Data';
+        $this->mk3->matkul = 'BASDAT';
         $this->mk3->sks = '4';
         $this->mk3->dosen = 'Ahmad';
         $this->mk3->hari = 'Senin';
@@ -40,8 +40,9 @@ class Matakuliah extends CI_Controller {
         $list_mk = [$this->mk1, $this->mk2, $this->mk3];
         $data['list_mk'] = $list_mk;
 
-        $this->load->view('header');
+        $this->load->view('layout/header');
+        $this->load->view('layout/sidebar');
         $this->load->view('matakuliah/index', $data);
-        $this->load->view('footer');
+        $this->load->view('layout/footer');
     }
 }
